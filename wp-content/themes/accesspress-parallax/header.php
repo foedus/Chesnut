@@ -69,11 +69,6 @@
 		
 		</nav><!-- #site-navigation -->
 		</div>
-
-		<?php 
-		if(of_get_option('show_social') == 1):
-			do_action('accesspress_social');
-		endif; ?>
 	</header><!-- #masthead -->
 
 	<section id="main-slider" class="full-screen-yes">
