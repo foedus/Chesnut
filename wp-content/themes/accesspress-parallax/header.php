@@ -70,23 +70,27 @@
 		</nav><!-- #site-navigation -->
 		</div>
 
-
 		<?php 
 		if(of_get_option('show_social') == 1):
 			do_action('accesspress_social');
 		endif; ?>
 	</header><!-- #masthead -->
 
-	<?php 
-	$accesspress_show_slider = of_get_option('show_slider') ;
-	$content_class = "";
-	if(empty($accesspress_show_slider) || $accesspress_show_slider == "no"):
-		$content_class = "no-slider";
-	endif;
-	?>
-	<div id="content" class="site-content <?php echo $content_class; ?>">
-	<?php 
-	if(is_home() || is_front_page()) :
-		do_action('accesspress_bxslider'); 
-	endif;
-	?>
+	<section id="main-slider" class="full-screen-yes">
+	    <div class="bx-slider">
+			<div class="slides">
+				<div class="overlay"></div>
+				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/slider1.jpg" alt="slider1">
+				<div class="slider-caption">
+					<div class="mid-content">
+						<h1 class="caption-title">Welcome to Chestnut!</h1>
+						<h2 class="caption-description">
+						<p>The best way to learn management skills!</p>
+						<p><a href="#">Get Started</a></p>
+						</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
