@@ -9,7 +9,7 @@
             <div class="service-listing clearfix">
                 <div class="clearfix service-list odd wow fadeInLeft" data-wow-delay="0.25s">
                     <div class="service-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/demo/icon1.png" alt="GREAT TEACHERS">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/landing/icon1.png" alt="GREAT TEACHERS">
                     </div>
                     <div class="service-detail">
                         <h3>GREAT TEACHERS</h3>
@@ -21,7 +21,7 @@
                     <div class="service-image">
                         <img src="<?php
                         echo get_template_directory_uri();
-                        ?>/images/demo/icon2.png" alt="COST EFFECTIVE">
+                        ?>/images/landing/icon2.png" alt="COST EFFECTIVE">
                     </div>
                     <div class="service-detail">
                         <h3>COST EFFECTIVE</h3>
@@ -33,7 +33,7 @@
                     <div class="service-image">
                         <img src="<?php
                         echo get_template_directory_uri();
-                        ?>/images/demo/icon3.png" alt="CONVENIENT">
+                        ?>/images/landing/icon3.png" alt="CONVENIENT">
                     </div>
                     <div class="service-detail">
                         <h3>CONVENIENT</h3>
@@ -45,7 +45,7 @@
                     <div class="service-image">
                         <img src="<?php
                         echo get_template_directory_uri();
-                        ?>/images/demo/icon4.png" alt="GROWING WITH YOU">
+                        ?>/images/landing/icon4.png" alt="GROWING WITH YOU">
                     </div>
                     <div class="service-detail">
                         <h3>GROWING WITH YOU</h3>
@@ -95,10 +95,10 @@
 <style type='text/css' media='all'>
 #features{ background:url() no-repeat scroll top left #f6f6f6; background-size:cover; color:#333333}
 #features .overlay { background:url(<?php echo get_template_directory_uri(); ?>/images/overlay0.png);}
-#portfolio{ background:url(<?php echo get_template_directory_uri(); ?>/images/demo/bg1.jpg) no-repeat fixed bottom center #e3633b; background-size:auto; color:#ffffff}
+#portfolio{ background:url(<?php echo get_template_directory_uri(); ?>/images/landing/bg1.jpg) no-repeat fixed bottom center #e3633b; background-size:auto; color:#ffffff}
 #portfolio .overlay { background:url(<?php echo get_template_directory_uri(); ?>/images/overlay3.png);}
 #for-news-and-updates-subscribe-us{ background:url() no-repeat fixed top left #F6F6F6; background-size:cover; color:#333}
-#contact{ background:url(<?php echo get_template_directory_uri(); ?>/images/demo/bg4.jpg) no-repeat scroll top left ; background-size:cover; color:#FFF}
+#contact{ background:url(<?php echo get_template_directory_uri(); ?>/images/landing/bg4.jpg) no-repeat scroll top left ; background-size:cover; color:#FFF}
 #contact .overlay { background:url(<?php echo get_template_directory_uri(); ?>/images/overlay3.png);}
 #content{margin:0 !important}
 </style>
