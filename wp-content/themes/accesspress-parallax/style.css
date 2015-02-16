@@ -1113,6 +1113,16 @@ Main SLider
 	z-index: 999;
 }
 
+#main-slider-image{
+	background:url(images/landing/slider1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 998;
+}
+
 .full-screen-yes .slides{
 	background-size: cover;
 	background-position: top center;
