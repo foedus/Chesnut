@@ -485,6 +485,7 @@ Content
 	float: left;
 }
 #page-primary{
+	margin-top: 90px;
 	width: 100%;
 	float: left;
 }
@@ -1250,7 +1251,7 @@ Default Section
 	color:inherit;
 }
 /*--------------------------------------------------------------
-Service Section
+Service Section (AKA Features Section)
 --------------------------------------------------------------*/
 .service-list{
 	height: 80px;
