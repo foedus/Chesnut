@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div class="portfolio-listing clearfix">
-		<?php create_portfolio() ?>
+		      <?php create_portfolio() ?><!-- loads sample courses -->
             </div><!-- #primary -->
         </div>
     </section>
@@ -80,7 +80,11 @@
                         <p><a class="btn" id="btn-subscribe" href="#"><?php _e( 'Subscribe' ); ?></a></p>
                     </div>
 		    <div id="form-holder" style="display:none;">
-		        <iframe height="406px" allowTransparency="true" frameborder="0" scrolling="no" style="width:80%;border:none;margin-bottom:5px;"  src="https://hindawi.wufoo.com/embed/z17hsgya1q3fhnx/"><a href="https://hindawi.wufoo.com/forms/z17hsgya1q3fhnx/">Fill out my Wufoo form!</a></iframe><div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;"></div>
+		        <iframe height="406px" allowTransparency="true" frameborder="0" scrolling="no" style="width:80%;border:none;margin-bottom:5px;"  src="https://hindawi.wufoo.com/embed/z17hsgya1q3fhnx/">
+                    <a href="https://hindawi.wufoo.com/forms/z17hsgya1q3fhnx/"></a>
+                </iframe>
+                <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">
+                </div>
 		    </div>
                 </div>
             </div><!-- #primary -->
@@ -88,7 +92,8 @@
     </section>
 </div>
 
-<style type='text/css' media='all'>#features{ background:url() no-repeat scroll top left #f6f6f6; background-size:cover; color:#333333}
+<style type='text/css' media='all'>
+#features{ background:url() no-repeat scroll top left #f6f6f6; background-size:cover; color:#333333}
 #features .overlay { background:url(<?php echo get_template_directory_uri(); ?>/images/overlay0.png);}
 #portfolio{ background:url(<?php echo get_template_directory_uri(); ?>/images/demo/bg1.jpg) no-repeat fixed bottom center #e3633b; background-size:auto; color:#ffffff}
 #portfolio .overlay { background:url(<?php echo get_template_directory_uri(); ?>/images/overlay3.png);}
