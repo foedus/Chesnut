@@ -1321,7 +1321,7 @@ Portfolio Section
 }
 .portfolio-list .portfolio-overlay{
 	position: absolute;
-	width: 100%;
+	width: 282px;
 	height: 100%;
 	background: rgba(0,0,0,0.3);
 	z-index: 9999;
