@@ -1260,6 +1260,7 @@ Service Section (AKA Features Section)
 	border:1px solid;
     border-color: inherit;
 	background:rgba(255,255,255,0.1);
+	text-align: center;
 }
 .service-list .service-image img{
 	padding: 15px;
