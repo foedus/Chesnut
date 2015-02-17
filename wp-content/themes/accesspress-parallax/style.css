@@ -1098,6 +1098,10 @@ Main SLider
 #main-slider{
 	position: relative;
 	margin-bottom: 30px;
+	height: 464px;
+	background:url(images/landing/slider1.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
 }
 
 .parallax-on #main-slider,

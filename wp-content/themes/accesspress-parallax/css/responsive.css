@@ -101,6 +101,9 @@ Responsive CSS
 	.portfolio-list:nth-child(3n){
 		margin-right: 0;
 	}
+	.portfolio-list h3{
+		font-size: 12px;
+	}
 	.blog-listing .blog-list{
 		width: 80%;
 		margin: 0 auto 20px;
@@ -180,6 +183,9 @@ Responsive CSS
 	.portfolio-list, .portfolio-list:nth-child(3n), .portfolio-list:nth-child(4n){
 		width: 49%;
 		margin-right: 2%;
+	}
+	.portfolio-list h3{
+		font-size: 11px;
 	}
 	.portfolio-list:nth-child(2n){
 		margin-right: 0;

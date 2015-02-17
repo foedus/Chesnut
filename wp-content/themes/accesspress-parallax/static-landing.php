@@ -2,7 +2,6 @@
         <div class="bx-slider">
             <div class="slides">
                 <div class="overlay"></div>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/landing/slider1.jpg" alt="slider1">
                 <div class="slider-caption">
                     <div class="mid-content">
                         <h1 class="caption-title">Welcome to Chestnut!</h1>
