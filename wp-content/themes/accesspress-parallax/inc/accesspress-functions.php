@@ -442,7 +442,7 @@ function list_courses(){
 function create_portfolio(){
 
 	// query to get posts
-	$the_query = new WP_Query( 'category_name=courseHeader' );
+	$the_query = new WP_Query( 'category_name=course-header' );
 
 	// loop to create portfolio
 	if ( $the_query->have_posts() ) {
@@ -459,7 +459,7 @@ function create_portfolio(){
 			echo "</a>";
 		}
 	} else {
-		echo "No Posts Found";
+		echo "";
 		// no posts found
 	}
 	wp_reset_postdata();
