@@ -1370,11 +1370,15 @@ Portfolio Section
 	position: absolute;
 	width: 282px;
 	padding:15px 10px;
+	margin-left: auto;
+	margin-right: auto;
 	bottom: 0;
 	left: 0;
+	right: 0;
 	color: #FFF;
-	/* background: url(images/portfolio-text-bg.png) repeat-x top left; */
+	background: url(images/portfolio-text-bg.png) repeat-x top left;
 	font-size: 16px;
+	text-align: left;
 }
 
 .portfolio-list:hover h3{

@@ -65,7 +65,7 @@ Responsive CSS
 
 @media screen and (max-width: 768px){
 	h1{
-	font-size: 24px;
+		font-size: 24px;
 	}
 	h2{
 		font-size: 20px;
@@ -95,14 +95,14 @@ Responsive CSS
 		width: 100%;
 	}
 	.portfolio-list, .portfolio-list:nth-child(4n){
-		width: 32%;
-		margin-right: 2%;
+		width: 48%;
+		margin: 0% 1% 2% 1%;
 	}
 	.portfolio-list:nth-child(3n){
 		margin-right: 0;
 	}
 	.portfolio-list h3{
-		font-size: 12px;
+		font-size: 100%;
 	}
 	.blog-listing .blog-list{
 		width: 80%;
@@ -180,12 +180,12 @@ Responsive CSS
 	.team-tab .bx-wrapper .bx-viewport{
 		border-radius: 0;
 	}
-	.portfolio-list, .portfolio-list:nth-child(3n), .portfolio-list:nth-child(4n){
-		width: 49%;
-		margin-right: 2%;
+	.portfolio-list {
+		width: 98%;
+		margin: 0% 1% 2% 1%;
 	}
 	.portfolio-list h3{
-		font-size: 11px;
+		font-size: 100%;
 	}
 	.portfolio-list:nth-child(2n){
 		margin-right: 0;
