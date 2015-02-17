@@ -1316,11 +1316,12 @@ Service Section (AKA Features Section)
 Portfolio Section
 --------------------------------------------------------------*/
 .portfolio-listing{
-	padding-left: 8%;
+	padding-left: 0%;
 }
 
 .portfolio-list{
-	width: 33.333%;
+	width: 32.333%;
+	margin-right: 1%;
 	float: left;
 	margin-bottom: 1.5%;
 	position: relative;
