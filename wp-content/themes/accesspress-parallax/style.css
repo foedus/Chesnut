@@ -1135,7 +1135,7 @@ Main SLider
 
 .slider-caption{
 	position: absolute;
-	top:50%;
+	top:60%;
 	left:0;
 	width: 100%;
 	z-index: 999;
@@ -1318,7 +1318,6 @@ Portfolio Section
 .portfolio-listing{
 	padding-left: 0%;
 }
-
 .portfolio-list{
 	width: 31.333%;
 	margin: 0% 1%;
@@ -1384,7 +1383,6 @@ Portfolio Section
 .portfolio-list:hover h3{
 	display: none;
 }
-
 .portfolio-overlay {
 	transition: opacity 0.2s ease-in-out;
 	-moz-transition: opacity 0.2s ease-in-out;
