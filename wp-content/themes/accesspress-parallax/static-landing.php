@@ -23,7 +23,7 @@
                 </div>
             </div> 
             <div class="service-listing clearfix">
-                <div class="clearfix service-list odd wow fadeInLeft" data-wow-delay="0.25s">
+                <div class="clearfix service-list odd">
                     <div class="service-image">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/landing/icon1.png" alt="GREAT TEACHERS">
                     </div>
@@ -33,7 +33,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="clearfix service-list even wow fadeInRight" data-wow-delay="0.5s">
+                <div class="clearfix service-list even">
                     <div class="service-image">
                         <img src="<?php
                         echo get_template_directory_uri();
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="clearfix service-list odd wow fadeInLeft" data-wow-delay="0.75s">
+                <div class="clearfix service-list odd">
                     <div class="service-image">
                         <img src="<?php
                         echo get_template_directory_uri();
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="clearfix service-list even wow fadeInRight" data-wow-delay="1s">
+                <div class="clearfix service-list even">
                     <div class="service-image">
                         <img src="<?php
                         echo get_template_directory_uri();

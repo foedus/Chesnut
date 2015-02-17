@@ -1291,9 +1291,6 @@ Service Section (AKA Features Section)
 /*--------------------------------------------------------------
 Portfolio Section
 --------------------------------------------------------------*/
-.portfolio-listing{
-	padding-left: 0%;
-}
 .portfolio-list{
 	width: 31.333%;
 	margin: 0% 1%;
