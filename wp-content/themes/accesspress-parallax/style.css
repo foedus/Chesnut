@@ -1320,12 +1320,13 @@ Portfolio Section
 }
 
 .portfolio-list{
-	width: 32.333%;
-	margin-right: 1%;
+	width: 31.333%;
+	margin: 0% 1%;
 	float: left;
 	margin-bottom: 1.5%;
 	position: relative;
 	overflow: hidden;
+	text-align: center;
 }
 .portfolio-list .center-this{
 	width: 282px;
@@ -1339,6 +1340,10 @@ Portfolio Section
 	position: absolute;
 	width: 282px;
 	height: 100%;
+	margin-left:auto;
+	margin-right:auto;
+	left:0;
+	right:0;
 	background: rgba(0,0,0,0.3);
 	z-index: 9999;
 	opacity: 0.0;
@@ -1380,10 +1385,6 @@ Portfolio Section
 	transition: opacity 0.2s ease-in-out;
 	-moz-transition: opacity 0.2s ease-in-out;
 	-webkit-transition: opacity 0.2s ease-in-out;
-}
-
-.portfolio-image {
-	text-align: center;
 }
 
 /*
