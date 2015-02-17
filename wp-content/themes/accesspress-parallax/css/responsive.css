@@ -6,7 +6,9 @@ Responsive CSS
 		width: 100%;
 		padding: 0 10px;
 	}
-
+	.portfolio-listing{
+		padding: 0%;
+	}
 	.service-list .service-image{
 		width: 16%;
 		height: auto;
@@ -14,11 +16,9 @@ Responsive CSS
 	.service-list .service-detail{
 		width: 80%;
 	}
-
 	.team-tab{
 		padding: 0 50px;
 	}
-
 	.social-icons{
 		display: none;
 	}
@@ -102,6 +102,9 @@ Responsive CSS
 	}
 	.service-listing .service-list{
 		text-align: left;
+	}
+	.portfolio-listing{
+		padding: 0% 12%;
 	}
 	.portfolio-list, .portfolio-list:nth-child(4n){
 		width: 48%;
@@ -188,6 +191,9 @@ Responsive CSS
 	}
 	.team-tab .bx-wrapper .bx-viewport{
 		border-radius: 0;
+	}
+	.portfolio-listing{
+		padding: 0%;
 	}
 	.portfolio-list {
 		width: 98%;
