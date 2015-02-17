@@ -94,6 +94,15 @@ Responsive CSS
 	.service-list{
 		width: 100%;
 	}
+	.service-list.odd .service-image{
+		float: left;
+	}
+	.service-list.odd .service-detail{
+		float: right;
+	}
+	.service-listing .service-list{
+		text-align: left;
+	}
 	.portfolio-list, .portfolio-list:nth-child(4n){
 		width: 48%;
 		margin: 0% 1% 2% 1%;
