@@ -63,7 +63,7 @@ Responsive CSS
 	}
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 920px){
 	h1{
 		font-size: 24px;
 	}
@@ -154,7 +154,7 @@ Responsive CSS
 		display: none;
 	}
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 610px){
 	.parallax-section h1{
 		font-size: 30px;
 	}
@@ -182,7 +182,7 @@ Responsive CSS
 	}
 	.portfolio-list {
 		width: 98%;
-		margin: 0% 1% 2% 1%;
+		margin: 0% 1% 4% 1%;
 	}
 	.portfolio-list h3{
 		font-size: 100%;
