@@ -1381,6 +1381,10 @@ Portfolio Section
 	-webkit-transition: opacity 0.2s ease-in-out;
 }
 
+.portfolio-image {
+	text-align: center;
+}
+
 /*
 .portfolio-list:hover img{
 	-ms-transform: scale(1.1); /* IE 9 
