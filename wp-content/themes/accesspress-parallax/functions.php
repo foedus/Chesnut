@@ -190,3 +190,14 @@ function accesspress_parallax_get_my_option()
 }
 
 add_action("wp_ajax_get_my_option", "accesspress_parallax_get_my_option");
+
+function my_wp_nav_menu_args( $args = '' ) {
+	if( is_user_logged_in() ) {
+		$args['menu'] = 'logged-in';
+	} else {
+		$args['menu'] = 'logged-out';
+	}
+	return $args;
+}
+add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
+}
