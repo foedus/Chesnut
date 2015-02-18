@@ -191,6 +191,7 @@ function accesspress_parallax_get_my_option()
 
 add_action("wp_ajax_get_my_option", "accesspress_parallax_get_my_option");
 
+// custom menu changes for logged in users
 function my_wp_nav_menu_args( $args = '' ) {
 	if( is_user_logged_in() ) {
 		$args['menu'] = 'logged-in';
@@ -200,3 +201,22 @@ function my_wp_nav_menu_args( $args = '' ) {
 	return $args;
 }
 add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
+
+// custom redirect, all non-admin users to homepage
+function my_login_redirect( $redirect_to, $request, $user ) {
+	//is there a user to check?
+	global $user;
+	if ( isset( $user->roles ) && is_array( $user->roles ) ) {
+		//check for admins
+		if ( in_array( 'administrator', $user->roles ) ) {
+			// redirect them to the default place
+			return $redirect_to;
+		} else {
+			return home_url();
+		}
+	} else {
+		return $redirect_to;
+	}
+}
+
+add_filter( 'login_redirect', 'my_login_redirect', 10, 3 );
