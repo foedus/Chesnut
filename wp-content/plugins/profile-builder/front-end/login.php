@@ -57,7 +57,7 @@ function wppb_login_redirect( $redirect_to, $redirect_url, $user ){
             $wppb_generalSettings = get_option('wppb_general_settings');
 
             if (isset($wppb_generalSettings['loginWith'])) {
-                $LostPassURL = home_url('/wp-login.php?action=lostpassword');
+                $LostPassURL = home_url('/recover-your-password/');
 
                 // if the Login shortcode has a lostpassword argument set, give the lost password error link that value
                 if (!empty($_POST['wppb_lostpassword_url'])) {
@@ -69,14 +69,14 @@ function wppb_login_redirect( $redirect_to, $redirect_url, $user ){
                 $LostPassURL = apply_filters('wppb_pre_login_url_filter', $LostPassURL);
 
                 if ($user->get_error_code() == 'incorrect_password') {
-                    $error_string = '<strong>' . __('ERROR', 'profilebuilder') . '</strong>: ' . __('The password you entered is incorrect.', 'profilebuilder') . ' ';
+                    $error_string = '<strong>' .  '</strong>' . __('The password you entered is incorrect.', 'profilebuilder') . ' ';
                     $error_string .= '<a href="' . $LostPassURL . '" title="' . __('Password Lost and Found.', 'profilebuilder') . '">' . __('Lost your password', 'profilebuilder') . '</a>?';
 
                     // change the recover password link
                     $error_string = str_replace(home_url('/wp-login.php?action=lostpassword'), $LostPassURL, $error_string);
                 }
                 if ($user->get_error_code() == 'invalid_username') {
-                    $error_string = '<strong>' . __('ERROR', 'profilebuilder') . '</strong>: ' . __('Invalid username.', 'profilebuilder') . ' ';
+                    $error_string = '<strong>' . '</strong>' . __('Invalid username.', 'profilebuilder') . ' ';
                     $error_string .= '<a href="' . $LostPassURL . '" title="' . __('Password Lost and Found.', 'profilebuilder') . '">' . __('Lost your password', 'profilebuilder') . '</a>?';
                 }
                 // if login with email is enabled change the word username with email
@@ -86,7 +86,7 @@ function wppb_login_redirect( $redirect_to, $redirect_url, $user ){
             }
             // if the error string is empty it means that none of the fields were completed
             if (empty($error_string)) {
-                $error_string = '<strong>' . __('ERROR', 'profilebuilder') . '</strong>: ' . __('Both fields are empty.', 'profilebuilder') . ' ';
+                $error_string = '<strong>' . '</strong>' . __('Both fields are empty.', 'profilebuilder') . ' ';
                 $error_string = apply_filters('wppb_login_empty_fields_error_message', $error_string);
             }
 
@@ -111,7 +111,7 @@ add_filter( 'login_redirect', 'wppb_login_redirect', 10, 3 );
 /* shortcode function */
 function wppb_front_end_login( $atts ){
 
-    extract( shortcode_atts( array( 'display' => true, 'redirect' =>'', 'register_url'=>'', 'lostpassword_url'=>'' ), $atts ) );
+    extract( shortcode_atts( array( 'display' => true, 'redirect' =>'/', 'register_url'=>'', 'lostpassword_url'=>'/recover-your-password/' ), $atts ) );
 
 	$wppb_generalSettings = get_option('wppb_general_settings');
 
