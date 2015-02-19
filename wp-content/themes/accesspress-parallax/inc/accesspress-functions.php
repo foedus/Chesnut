@@ -229,18 +229,12 @@ add_filter('body_class','accesspress_is_parallax');
 
 //Dynamic styles on header
 function accesspress_header_styles_scripts(){
-	$sections = of_get_option('parallax_section');
 	$favicon = of_get_option('fav_icon');
 	$custom_css = of_get_option('custom_css');
 	$custom_js = of_get_option('custom_js');
 	$image_url = get_template_directory_uri()."/images/";
 	echo "<link type='image/png' rel='icon' href='".$favicon."'/>\n";
 	echo "<style type='text/css' media='all'>"; 
-
-	foreach ($sections as $section) {
-		echo "#".sanitize_title(get_the_title($section['page']))."{ background:url(".$section['image'].") ".$section['repeat']." ".$section['attachment']." ".$section['position']." ".$section['color']."; background-size:".$section['size']."; color:".$section['font_color']."}\n";
-		echo "#".sanitize_title(get_the_title($section['page']))." .overlay { background:url(".$image_url.$section['overlay'].".png);}\n";
-	}
 	echo $custom_css;
 
 	echo "</style>\n"; 
