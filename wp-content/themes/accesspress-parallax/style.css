@@ -237,7 +237,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
     position: relative;
-	background: #E66432;
+	background: #CB826F;
 	display: inline-block;
 	line-height: 1;
 	padding: 12px 20px;
@@ -311,7 +311,7 @@ textarea {
 Links
 --------------------------------------------------------------*/
 a {
-	color: #E66432;
+	color: #CB826F;
 }
 
 /*--------------------------------------------------------------
@@ -514,7 +514,7 @@ Content
 	color: #333;
 }
 #secondary h2.widget-title{
-	border-bottom: 1px solid #E66432;
+	border-bottom: 1px solid #CB826F;
 	margin-bottom: 10px;
 	line-height: 1.2;
 	font-size: 18px;
@@ -597,7 +597,7 @@ Posts and pages
 	position: absolute;
 	left: 20px;
 	top: -14px;
-	background: #E66432;
+	background: #CB826F;
 	width: 60px;
 	text-align: center;
 	color: #FFF;
@@ -670,7 +670,7 @@ Posts and pages
 	background: #FFF;
 	padding: 10px;
 	margin-bottom: 30px;
-	border-bottom: 3px solid #E66432;
+	border-bottom: 3px solid #CB826F;
 }
 .entry-thumb{
 	margin: -20px -20px 15px;
@@ -952,7 +952,7 @@ Main Header
 	z-index: 99999;
 	background: #FFF;
 	padding: 10px 0;
-	border-bottom: 3px solid #E66432;
+	border-bottom: 3px solid #CB826F;
 	position: relative;
 }
 #masthead.logo-top{
@@ -1010,7 +1010,7 @@ body.parallax-on .wpcf7-not-valid-tip{
 	font-size:14px;
 }
 .main-navigation > ul > li.current a{
-	color: #E66432;
+	color: #CB826F;
 }
 .main-navigation a {
 	display: block;
@@ -1043,14 +1043,14 @@ body.parallax-on .wpcf7-not-valid-tip{
 	border:none;
 }
 .main-navigation li:hover > a {
-	color: #E66432;
+	color: #CB826F;
 }
 .main-navigation ul li:hover > ul {
 	display: block;
 }
 .main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a {
-	color: #E66432;
+	color: #CB826F;
 }
 /* Small menu */
 .menu-toggle {
@@ -1337,7 +1337,7 @@ Portfolio Section
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	background: #E66432;
+	background: #CB826F;
 	border-radius: 50%;
 	font-size: 30px;
 	text-align: center;
@@ -1488,7 +1488,7 @@ Footer Section
 	display: none;
 	height: 50px;
 	width: 50px;
-	background: #E66432;
+	background: #CB826F;
 	text-align: center;
 	line-height: 50px;
 	z-index: 9999;
