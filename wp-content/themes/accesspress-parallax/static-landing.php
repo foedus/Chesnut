@@ -111,7 +111,7 @@
 <style type='text/css' media='all'>
 #features{ background:url() no-repeat scroll top left #f6f6f6; background-size:cover; color:#333333}
 #features .overlay { background:url(<?php echo get_template_directory_uri(); ?>/images/overlay0.png);}
-#portfolio{ background:url(<?php echo get_template_directory_uri(); ?>/images/landing/bg1.jpg) no-repeat fixed bottom center #e3633b; background-size:auto; color:#ffffff}
+#portfolio{ background:url(<?php echo get_template_directory_uri(); ?>/images/landing/bg1.jpg) no-repeat fixed bottom center #CB826F; background-size:auto; color:#ffffff}
 #portfolio .overlay { background:url(<?php echo get_template_directory_uri(); ?>/images/overlay3.png);}
 #for-news-and-updates-subscribe-us{ background:url() no-repeat fixed top left #F6F6F6; background-size:cover; color:#333}
 #contact{ background:url(<?php echo get_template_directory_uri(); ?>/images/landing/bg4.jpg) no-repeat scroll top left ; background-size:cover; color:#FFF}

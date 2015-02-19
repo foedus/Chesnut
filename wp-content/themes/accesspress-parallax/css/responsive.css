@@ -33,7 +33,7 @@ Responsive CSS
 		display: block;
 		height: 40px;
 		width: 40px;
-		background: url(../images/menu.png) no-repeat center #E3633B;
+		background: url(../images/menu.png) no-repeat center #CB826F;
 		text-indent: -9999px;
 		cursor: pointer;
 	}
@@ -45,7 +45,7 @@ Responsive CSS
 		top: 100%;
 		left: 0;
 		width: 100%;
-		background: #E3633B;
+		background: #CB826F;
 		padding: 10px 0;
 		text-align: center;
 	}
