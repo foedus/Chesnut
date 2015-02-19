@@ -111,7 +111,7 @@ add_filter( 'login_redirect', 'wppb_login_redirect', 10, 3 );
 /* shortcode function */
 function wppb_front_end_login( $atts ){
 
-    extract( shortcode_atts( array( 'display' => true, 'redirect' =>'/', 'register_url'=>'', 'lostpassword_url'=>'/recover-your-password/' ), $atts ) );
+    extract( shortcode_atts( array( 'display' => true, 'redirect' =>'/', 'register_url'=>'', 'lostpassword_url'=>'' ), $atts ) );
 
 	$wppb_generalSettings = get_option('wppb_general_settings');
 
