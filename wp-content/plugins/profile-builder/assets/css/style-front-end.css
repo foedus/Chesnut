@@ -123,8 +123,7 @@
 .wppb-form-field label,
 #wppb-login-wrap .login-username label,
 #wppb-login-wrap .login-password label{
-	width:30%;
-	float:left;
+	width:100%;
 	min-height:1px;
 }
 
@@ -204,6 +203,9 @@ input#send_credentials_via_email{
 	margin-left:0;
 }
 
+.wppb-default-contact-info-heading {
+	display: none;
+}
 
 #recaptcha_widget_div{
 	display: inline-block;
