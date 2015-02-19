@@ -47,10 +47,7 @@
 			<div class="mid-content clearfix">
 				<div  class="copy-right">
 					&copy; <?php echo date('Y')." "; bloginfo('name'); ?>  
-				</div><!-- .copy-right -->
-				<div class="site-info">
-					<?php _e('Theme: AccessPress Parallax'); ?>
-				</div><!-- .site-info -->
+				</div><!-- .copy-right -->-->
 			</div>
 		</div>
 	</footer><!-- #colophon -->
