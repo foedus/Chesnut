@@ -128,3 +128,4 @@ get_header(); ?>
 #contact .overlay { background:url(<?php echo get_template_directory_uri(); ?>/images/overlay3.png);}
 #content{margin:0 !important}
 </style>
+<?php get_footer(); ?>
