@@ -10,6 +10,9 @@
 get_header(); ?>
 <div class="mid-content">
 	<div id="page-primary" class="content-area">
+		<div id="library-filters" class="content-area">
+		<h1>Filters</h1>
+		</div>
 		<main id="main" class="site-main" role="main">
 
 			<?php
@@ -18,9 +21,12 @@ get_header(); ?>
 				foreach ( $postslist as $post ) :
 			  		setup_postdata( $post ); ?> 			
 					<div class="course-info">
-						<h2 id="course-title"><?php the_title(); ?></h2>
-						</br>
-						<?php the_excerpt(); ?>
+						<div id="course-image"><?php the_thumbnail(); ?></div>
+						<div id="course-text">
+							<h2 id="course-title"><?php the_title(); ?></h2>
+							</br>
+							<?php the_excerpt(); ?>
+						</div>
 					</div>
 			<?php endforeach; 
 			wp_reset_postdata(); 
