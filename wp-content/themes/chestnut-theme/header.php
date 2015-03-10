@@ -14,6 +14,10 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+<!-- TEMPORARY HARD LINK TO STYLESHEET TO PREVENT CACHING - REMOVE WHEN READY TO LAUNCH -->
+<link rel="stylesheet" id="chestnut_theme-style-css" href="http://www.chestnut-learning.com/wp-content/themes/chestnut-theme/style.css" type="text/css" media="all">
+
 <!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.js"></script>
 <![endif]-->

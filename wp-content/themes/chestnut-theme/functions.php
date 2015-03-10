@@ -112,7 +112,10 @@ function chestnut_theme_scripts() {
 	wp_enqueue_style( 'google-fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ) );
 	wp_enqueue_style( 'chestnut_theme-font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
 	wp_enqueue_style( 'chestnut_theme-animate', get_template_directory_uri() . '/css/animate.css' );
-	wp_enqueue_style( 'chestnut_theme-style', get_stylesheet_uri() );
+
+	/* TEMPORARY DISABLE ENQUEUE STYLE TO PREVENT CACHING - REMOVE WHEN LAUNCH */
+	/* wp_enqueue_style( 'chestnut_theme-style', get_stylesheet_uri() ); */
+	
 	if(of_get_option('enable_responsive') == 1) :
 		wp_enqueue_style( 'chestnut_theme-responsive', get_template_directory_uri() . '/css/responsive.css' );
 	endif;
