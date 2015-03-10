@@ -1,3 +1,13 @@
+<?php
+/**
+ * Template Name: Static Landing Page
+ * The template for displaying the Chestnut Landing Page
+ *
+ * @package chestnut_theme
+ */
+
+get_header(); ?>
+
     <section id="main-slider" class="full-screen-yes">
         <div class="bx-slider">
             <div class="slides">
@@ -82,7 +92,7 @@
                 </div>
             </div>
             <div class="portfolio-listing clearfix">
-		      <?php create_portfolio() ?><!-- loads sample courses -->
+              <?php create_portfolio() ?><!-- loads sample courses -->
             </div><!-- #primary -->
         </div>
     </section>
@@ -95,13 +105,13 @@
                     <div class="page-content">
                         <p><a class="btn" id="btn-subscribe" href="#"><?php _e( 'Subscribe' ); ?></a></p>
                     </div>
-		    <div id="form-holder" style="display:none;">
-		        <iframe height="406px" allowTransparency="true" frameborder="0" scrolling="no" style="width:80%;border:none;margin-bottom:5px;"  src="https://hindawi.wufoo.com/embed/z17hsgya1q3fhnx/">
+            <div id="form-holder" style="display:none;">
+                <iframe height="406px" allowTransparency="true" frameborder="0" scrolling="no" style="width:80%;border:none;margin-bottom:5px;"  src="https://hindawi.wufoo.com/embed/z17hsgya1q3fhnx/">
                     <a href="https://hindawi.wufoo.com/forms/z17hsgya1q3fhnx/"></a>
                 </iframe>
                 <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">
                 </div>
-		    </div>
+            </div>
                 </div>
             </div><!-- #primary -->
         </div>

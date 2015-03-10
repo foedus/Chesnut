@@ -1401,11 +1401,14 @@ Course Library Page
 #library-filters{
 	width: 25%;
 	border: 1px solid black;
+	float: left;
+	display: inline-block;
 }
 .course-info h1{
 	padding: 5px;
 	border-top: 1px solid black;
-	width: 100%; 
+	width: 100%;
+	display: inline-block;
 }
 #course-image{
 	float: left;
@@ -1414,10 +1417,12 @@ Course Library Page
 	border: 1px solid black;
 	background-color: white;
 	padding: 5px;
+	display: inline-block;
 }
 #course-text{
     padding:5px 5px;
     color: white;
+    display: inline-block;
 }
 #course-title{
     padding:5px 5px;
