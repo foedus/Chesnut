@@ -21,7 +21,7 @@ get_header(); ?>
 				foreach ( $postslist as $post ) :
 			  		setup_postdata( $post ); ?> 			
 					<div class="course-info">
-						<div id="course-image"><?php the_thumbnail(); ?></div>
+						<div id="course-image"><?php the_post_thumbnail(); ?></div>
 						<div id="course-text">
 							<h2 id="course-title"><?php the_title(); ?></h2>
 							</br>
