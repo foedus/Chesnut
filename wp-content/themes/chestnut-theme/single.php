@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package accesspress_parallax
+ * @package chestnut_theme
  */
 
 get_header(); ?>
@@ -18,7 +18,7 @@ get_header(); ?>
 			/** Killed post pagination. Bring this back by uncommenting.
 			* $post_pagination = of_get_option('post_pagination');
 			* if( $post_pagination == 1 || !isset($post_pagination)) :
-			* accesspress_parallax_post_nav(); 
+			* chestnut_theme_post_nav(); 
 			* endif;
 			*/
 			?>

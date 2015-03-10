@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features
  *
- * @package accesspress_parallax
+ * @package chestnut_theme
  */
 
 /**
@@ -13,11 +13,11 @@
  * @param array $args Configuration arguments.
  * @return array
  */
-function accesspress_parallax_page_menu_args( $args ) {
+function chestnut_theme_page_menu_args( $args ) {
 	$args['show_home'] = true;
 	return $args;
 }
-add_filter( 'wp_page_menu_args', 'accesspress_parallax_page_menu_args' );
+add_filter( 'wp_page_menu_args', 'chestnut_theme_page_menu_args' );
 
 /**
  * Adds custom classes to the array of body classes.
@@ -25,7 +25,7 @@ add_filter( 'wp_page_menu_args', 'accesspress_parallax_page_menu_args' );
  * @param array $classes Classes for the body element.
  * @return array
  */
-function accesspress_parallax_body_classes( $classes ) {
+function chestnut_theme_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -33,7 +33,7 @@ function accesspress_parallax_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'accesspress_parallax_body_classes' );
+add_filter( 'body_class', 'chestnut_theme_body_classes' );
 
 /**
  * Filters wp_title to print a neat <title> tag based on what is being viewed.
@@ -42,7 +42,7 @@ add_filter( 'body_class', 'accesspress_parallax_body_classes' );
  * @param string $sep Optional separator.
  * @return string The filtered title.
  */
-function accesspress_parallax_wp_title( $title, $sep ) {
+function chestnut_theme_wp_title( $title, $sep ) {
 	if ( is_feed() ) {
 		return $title;
 	}
@@ -60,12 +60,12 @@ function accesspress_parallax_wp_title( $title, $sep ) {
 
 	// Add a page number if necessary:
 	if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
-		$title .= " $sep " . sprintf( __( 'Page %s', 'accesspress_parallax' ), max( $paged, $page ) );
+		$title .= " $sep " . sprintf( __( 'Page %s', 'chestnut_theme' ), max( $paged, $page ) );
 	}
 
 	return $title;
 }
-add_filter( 'wp_title', 'accesspress_parallax_wp_title', 10, 2 );
+add_filter( 'wp_title', 'chestnut_theme_wp_title', 10, 2 );
 
 /**
  * Sets the authordata global when viewing an author archive.
@@ -79,58 +79,58 @@ add_filter( 'wp_title', 'accesspress_parallax_wp_title', 10, 2 );
  * @global WP_Query $wp_query WordPress Query object.
  * @return void
  */
-function accesspress_parallax_setup_author() {
+function chestnut_theme_setup_author() {
 	global $wp_query;
 
 	if ( $wp_query->is_author() && isset( $wp_query->post ) ) {
 		$GLOBALS['authordata'] = get_userdata( $wp_query->post->post_author );
 	}
 }
-add_action( 'wp', 'accesspress_parallax_setup_author' );
+add_action( 'wp', 'chestnut_theme_setup_author' );
 
 //bxSlider Callback for do action
-function accesspress_bxslidercb(){
+function chestnut_bxslidercb(){
 		global $post;
-		$accesspress_parallax = of_get_option('parallax_section');
-		if(!empty($accesspress_parallax)) :
-			$accesspress_parallax_first_page_array = array_slice($accesspress_parallax, 0, 1);
-			$accesspress_parallax_first_page = sanitize_title(get_the_title($accesspress_parallax_first_page_array[0]['page']));
+		$chestnut_theme = of_get_option('parallax_section');
+		if(!empty($chestnut_theme)) :
+			$chestnut_theme_first_page_array = array_slice($chestnut_theme, 0, 1);
+			$chestnut_theme_first_page = sanitize_title(get_the_title($chestnut_theme_first_page_array[0]['page']));
 		endif;
-		$accesspress_slider_category = of_get_option('slider_category');
-		$accesspress_slider_full_window = of_get_option('slider_full_window') ;
-		$accesspress_show_slider = of_get_option('show_slider') ;
-		$accesspress_show_pager = (!of_get_option('show_pager') || of_get_option('show_pager') == "yes") ? "true" : "false";
-		$accesspress_show_controls = (!of_get_option('show_controls') || of_get_option('show_controls') == "yes") ? "true" : "false";
-		$accesspress_auto_transition = (!of_get_option('auto_transition') || of_get_option('auto_transition') == "yes") ? "true" : "false";
-		$accesspress_slider_transition = (!of_get_option('slider_transition')) ? "fade" : of_get_option('slider_transition');
-		$accesspress_slider_speed = (!of_get_option('slider_speed')) ? "5000" : of_get_option('slider_speed');
-		$accesspress_slider_pause = (!of_get_option('slider_pause')) ? "5000" : of_get_option('slider_pause');
-		$accesspress_show_caption = of_get_option('show_caption') ;
-		$accesspress_enable_parallax = of_get_option('enable_parallax');
+		$chestnut_slider_category = of_get_option('slider_category');
+		$chestnut_slider_full_window = of_get_option('slider_full_window') ;
+		$chestnut_show_slider = of_get_option('show_slider') ;
+		$chestnut_show_pager = (!of_get_option('show_pager') || of_get_option('show_pager') == "yes") ? "true" : "false";
+		$chestnut_show_controls = (!of_get_option('show_controls') || of_get_option('show_controls') == "yes") ? "true" : "false";
+		$chestnut_auto_transition = (!of_get_option('auto_transition') || of_get_option('auto_transition') == "yes") ? "true" : "false";
+		$chestnut_slider_transition = (!of_get_option('slider_transition')) ? "fade" : of_get_option('slider_transition');
+		$chestnut_slider_speed = (!of_get_option('slider_speed')) ? "5000" : of_get_option('slider_speed');
+		$chestnut_slider_pause = (!of_get_option('slider_pause')) ? "5000" : of_get_option('slider_pause');
+		$chestnut_show_caption = of_get_option('show_caption') ;
+		$chestnut_enable_parallax = of_get_option('enable_parallax');
 		?>
 
-		<?php if( $accesspress_show_slider == "yes" || empty($accesspress_show_slider)) : ?>
-		<section id="main-slider" class="full-screen-<?php echo $accesspress_slider_full_window; ?>">
+		<?php if( $chestnut_show_slider == "yes" || empty($chestnut_show_slider)) : ?>
+		<section id="main-slider" class="full-screen-<?php echo $chestnut_slider_full_window; ?>">
 		
 		<div class="overlay"></div>
 
-		<?php if(!empty($accesspress_parallax_first_page)): ?>
-		<div class="next-page"><a href="#<?php echo $accesspress_parallax_first_page; ?>"></a></div>
+		<?php if(!empty($chestnut_theme_first_page)): ?>
+		<div class="next-page"><a href="#<?php echo $chestnut_theme_first_page; ?>"></a></div>
 		<?php endif; ?>
 
  		<script type="text/javascript">
             jQuery(function($){
 				$('#main-slider .bx-slider').bxSlider({
 					adaptiveHeight: true,
-					pager: <?php echo $accesspress_show_pager; ?>,
-					controls: <?php echo $accesspress_show_controls; ?>,
-					mode: '<?php echo $accesspress_slider_transition; ?>',
-					auto : '<?php echo $accesspress_auto_transition; ?>',
-					pause: '<?php echo $accesspress_slider_pause; ?>',
-					speed: '<?php echo $accesspress_slider_speed; ?>'
+					pager: <?php echo $chestnut_show_pager; ?>,
+					controls: <?php echo $chestnut_show_controls; ?>,
+					mode: '<?php echo $chestnut_slider_transition; ?>',
+					auto : '<?php echo $chestnut_auto_transition; ?>',
+					pause: '<?php echo $chestnut_slider_pause; ?>',
+					speed: '<?php echo $chestnut_slider_speed; ?>'
 				});
 
-				<?php if($accesspress_slider_full_window == "yes" && !empty($accesspress_slider_category)) : ?>
+				<?php if($chestnut_slider_full_window == "yes" && !empty($chestnut_slider_category)) : ?>
 				$(window).resize(function(){
 					var winHeight = $(window).height();
 					var headerHeight = $('#masthead').outerHeight();
@@ -141,10 +141,10 @@ function accesspress_bxslidercb(){
 			});
         </script>
         <?php
-		if( !empty($accesspress_slider_category)) :
+		if( !empty($chestnut_slider_category)) :
 
 				$loop = new WP_Query(array(
-						'cat' => $accesspress_slider_category,
+						'cat' => $chestnut_slider_category,
 						'posts_per_page' => -1
 					));
 					if($loop->have_posts()) : ?>
@@ -154,17 +154,17 @@ function accesspress_bxslidercb(){
 					while($loop->have_posts()) : $loop-> the_post(); 
 					$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full', false ); 
 					$image_url = "";
-					if($accesspress_slider_full_window == "yes") : 
+					if($chestnut_slider_full_window == "yes") : 
 						$image_url =  "style = 'background-image:url(".$image[0].");'";
 				    endif;
 					?>
 					<div class="slides" <?php echo $image_url; ?>>
 					
-					<?php if($accesspress_slider_full_window == "no") : ?>		
+					<?php if($chestnut_slider_full_window == "no") : ?>		
 						<img src="<?php echo $image[0]; ?>">
 					<?php endif; ?>
 								
-						<?php if($accesspress_show_caption == 'yes'): ?>
+						<?php if($chestnut_show_caption == 'yes'): ?>
 						<div class="slider-caption">
 							<div class="mid-content">
 								<h1 class="caption-title"><?php the_title();?></h1>
@@ -213,10 +213,10 @@ function accesspress_bxslidercb(){
 <?php
 }
 
-add_action('accesspress_bxslider','accesspress_bxslidercb', 10);
+add_action('chestnut_bxslider','chestnut_bxslidercb', 10);
 
 //add class for parallax
-function accesspress_is_parallax($class){
+function chestnut_is_parallax($class){
 	$is_parallax = of_get_option('enable_parallax');
 	if($is_parallax=='1'):
 		$class[] = "parallax-on"; 
@@ -224,11 +224,11 @@ function accesspress_is_parallax($class){
 	return $class;
 }
 
-add_filter('body_class','accesspress_is_parallax');
+add_filter('body_class','chestnut_is_parallax');
 
 
 //Dynamic styles on header
-function accesspress_header_styles_scripts(){
+function chestnut_header_styles_scripts(){
 	$favicon = of_get_option('fav_icon');
 	$custom_css = of_get_option('custom_css');
 	$custom_js = of_get_option('custom_js');
@@ -254,9 +254,9 @@ function accesspress_header_styles_scripts(){
 	echo "</script>\n";
 }
 
-add_action('wp_head','accesspress_header_styles_scripts');
+add_action('wp_head','chestnut_header_styles_scripts');
 
-function accesspress_footer_count(){
+function chestnut_footer_count(){
 	$count = 0;
 	if(is_active_sidebar('footer-1'))
 	$count++;
@@ -274,7 +274,7 @@ function accesspress_footer_count(){
 }
 
 
-function accesspress_social_cb(){
+function chestnut_social_cb(){
 	$facebooklink = of_get_option('facebook');
 	$twitterlink = of_get_option('twitter');
 	$google_pluslink = of_get_option('google_plus');
@@ -338,24 +338,24 @@ function accesspress_social_cb(){
 	</script>
 <?php
 }
-add_action('accesspress_social','accesspress_social_cb', 10);
+add_action('chestnut_social','chestnut_social_cb', 10);
 
-function accesspress_remove_page_menu_div( $menu ){
+function chestnut_remove_page_menu_div( $menu ){
     return preg_replace( array( '#^<div[^>]*>#', '#</div>$#' ), '', $menu );
 }
-add_filter( 'wp_page_menu', 'accesspress_remove_page_menu_div' );
+add_filter( 'wp_page_menu', 'chestnut_remove_page_menu_div' );
 
-function accesspress_customize_excerpt_more( $more ) {
+function chestnut_customize_excerpt_more( $more ) {
 	return '...';
 }
-add_filter('excerpt_more', 'accesspress_customize_excerpt_more');
+add_filter('excerpt_more', 'chestnut_customize_excerpt_more');
 
-function accesspress_word_count($string, $limit) {
+function chestnut_word_count($string, $limit) {
 	$words = explode(' ', $string);
 	return implode(' ', array_slice($words, 0, $limit));
 }
 
-function accesspress_letter_count($content, $limit) {
+function chestnut_letter_count($content, $limit) {
 	$striped_content = strip_tags($content);
 	$striped_content = strip_shortcodes($striped_content);
 	$limit_content = mb_substr($striped_content, 0 , $limit );

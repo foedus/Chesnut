@@ -73,8 +73,8 @@ class Options_Framework_Admin {
             'mode' => 'submenu',
 
             // Submenu default settings
-            'page_title' => __( '', 'accesspress_parallax'),
-			'menu_title' => __('Theme Options', 'accesspress_parallax'),
+            'page_title' => __( '', 'chestnut_theme'),
+			'menu_title' => __('Theme Options', 'chestnut_theme'),
 			'capability' => 'edit_theme_options',
 			'menu_slug' => 'theme-options',
             'parent_slug' => 'themes.php',
@@ -122,7 +122,7 @@ class Options_Framework_Admin {
 
 		if ( $this->options_screen != $hook )
 	        return;
-	    wp_enqueue_style( 'accesspress_parallax-font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
+	    wp_enqueue_style( 'chestnut_theme-font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
 		wp_enqueue_style( 'optionsframework', OPTIONS_FRAMEWORK_DIRECTORY . 'css/optionsframework.css', array(),  Options_Framework::VERSION );
 		wp_enqueue_style( 'wp-color-picker' );
 	}
@@ -169,14 +169,14 @@ class Options_Framework_Admin {
 
 		<div class="theme-header clearfix">
 		<div class="accesspresslite-logo">
-		<img src="<?php echo get_template_directory_uri();?>/inc/options-framework/images/logo.png" alt="<?php esc_attr_e('AccessPress Lite','accesspress_parallax'); ?>" />
+		<img src="<?php echo get_template_directory_uri();?>/inc/options-framework/images/logo.png" alt="<?php esc_attr_e('AccessPress Lite','chestnut_theme'); ?>" />
 		</div>
 
 		<div class="ak-socials">
-		<p><?php _e('Follow us for new updates','accesspress_parallax') ?></p>
+		<p><?php _e('Follow us for new updates','chestnut_theme') ?></p>
 			<div class="social-bttns">
 			    
-				<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FAccessPress-Themes%2F1396595907277967&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=1411139805828592" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:20px; width:50px " allowTransparency="true"></iframe>
+				<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2Fchestnut-Themes%2F1396595907277967&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=1411139805828592" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:20px; width:50px " allowTransparency="true"></iframe>
 				&nbsp;&nbsp;
 			    <a href="<?php echo esc_url('https://twitter.com/apthemes') ?>" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @apthemes</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -197,8 +197,8 @@ class Options_Framework_Admin {
 				<?php settings_fields( 'optionsframework' ); ?>
 				<?php Options_Framework_Interface::optionsframework_fields(); /* Settings */ ?>
 				<div id="optionsframework-submit">
-					<input type="submit" class="button-primary" name="update" value="<?php esc_attr_e( 'Save Options', 'accesspress_parallax' ); ?>" />
-					<input type="submit" class="reset-button button-secondary" name="reset" value="<?php esc_attr_e( 'Restore Defaults', 'accesspress_parallax' ); ?>" onclick="return confirm( '<?php print esc_js( __( 'Click OK to reset. Any theme settings will be lost!', 'accesspress_parallax' ) ); ?>' );" />
+					<input type="submit" class="button-primary" name="update" value="<?php esc_attr_e( 'Save Options', 'chestnut_theme' ); ?>" />
+					<input type="submit" class="reset-button button-secondary" name="reset" value="<?php esc_attr_e( 'Restore Defaults', 'chestnut_theme' ); ?>" onclick="return confirm( '<?php print esc_js( __( 'Click OK to reset. Any theme settings will be lost!', 'chestnut_theme' ) ); ?>' );" />
 					<div class="clear"></div>
 				</div>
 				</form>
@@ -207,13 +207,13 @@ class Options_Framework_Admin {
             <div class="update-banner">
     			<img src="<?php echo get_template_directory_uri(); ?>/inc/options-framework/images/upgrade-top.jpg">
     			<div class="button-link">
-    				<a href="<?php echo esc_url('http://accesspressthemes.com/accesspress-parallax-pro/'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/inc/options-framework/images/demo-btn.png"></a>
-    				<a href="<?php echo esc_url('https://accesspressthemes.com/wordpress-themes/accesspress-parallax-pro/'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/inc/options-framework/images/upgrade-btn.png"></a>
+    				<a href="<?php echo esc_url('http://accesspressthemes.com/chestnut-theme-pro/'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/inc/options-framework/images/demo-btn.png"></a>
+    				<a href="<?php echo esc_url('https://accesspressthemes.com/wordpress-themes/chestnut-theme-pro/'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/inc/options-framework/images/upgrade-btn.png"></a>
     			</div>
     			<img src="<?php echo get_template_directory_uri(); ?>/inc/options-framework/images/upgrade-bottom.jpg">
     			<div class="button-link">
-    				<a href="<?php echo esc_url('http://accesspressthemes.com/accesspress-parallax-pro/'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/inc/options-framework/images/demo-btn.png"></a>
-    				<a href="<?php echo esc_url('https://accesspressthemes.com/wordpress-themes/accesspress-parallax-pro/'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/inc/options-framework/images/upgrade-btn.png"></a>
+    				<a href="<?php echo esc_url('http://accesspressthemes.com/chestnut-theme-pro/'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/inc/options-framework/images/demo-btn.png"></a>
+    				<a href="<?php echo esc_url('https://accesspressthemes.com/wordpress-themes/chestnut-theme-pro/'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/inc/options-framework/images/upgrade-btn.png"></a>
     			</div>
     
     			<div class="any-question">
@@ -230,8 +230,8 @@ class Options_Framework_Admin {
     	if(empty($optionsframework_settings_array)): ?>
     	<div class="ap-popup-wrapper">
     		<div class="ap-popup-close">&times;</div>
-    		<h4><?php _e('Like our Facebook page and don\'t miss any updates!','accesspress_parallax'); ?></h4>
-    		<iframe style="border: none; overflow: hidden; width: 340px; height: 260px;" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FAccessPress-Themes%2F1396595907277967&amp;width=340&amp;height=260&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=true&amp;appId=1411139805828592" width="340" height="260" frameborder="0" scrolling="no"></iframe>
+    		<h4><?php _e('Like our Facebook page and don\'t miss any updates!','chestnut_theme'); ?></h4>
+    		<iframe style="border: none; overflow: hidden; width: 340px; height: 260px;" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2Fchestnut-Themes%2F1396595907277967&amp;width=340&amp;height=260&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=true&amp;appId=1411139805828592" width="340" height="260" frameborder="0" scrolling="no"></iframe>
     	</div>
     	<div class="ap-popup-bg"></div>
     	<?php endif; ?>
@@ -258,7 +258,7 @@ class Options_Framework_Admin {
 		 */
 
 		if ( isset( $_POST['reset'] ) ) {
-			add_settings_error( 'options-framework', 'restore_defaults', __( 'Default options restored.', 'accesspress_parallax' ), 'updated fade' );
+			add_settings_error( 'options-framework', 'restore_defaults', __( 'Default options restored.', 'chestnut_theme' ), 'updated fade' );
 			return $this->get_default_values();
 		}
 
@@ -312,7 +312,7 @@ class Options_Framework_Admin {
 	 */
 
 	function save_options_notice() {
-		add_settings_error( 'options-framework', 'save_options', __( 'Options saved.', 'accesspress_parallax' ), 'updated fade' );
+		add_settings_error( 'options-framework', 'save_options', __( 'Options saved.', 'chestnut_theme' ), 'updated fade' );
 	}
 
 	/**

@@ -3,38 +3,38 @@
  * Sample implementation of the Custom Header feature
  * http://codex.wordpress.org/Custom_Headers
  *
- * @package accesspress_parallax
+ * @package chestnut_theme
  */
 
 /**
  * Setup the WordPress core custom header feature.
  *
- * @uses accesspress_parallax_header_style()
- * @uses accesspress_parallax_admin_header_style()
- * @uses accesspress_parallax_admin_header_image()
+ * @uses chestnut_theme_header_style()
+ * @uses chestnut_theme_admin_header_style()
+ * @uses chestnut_theme_admin_header_image()
  */
-function accesspress_parallax_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'accesspress_parallax_custom_header_args', array(
+function chestnut_theme_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'chestnut_theme_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 250,
 		'height'                 => 170,
 		'flex-width'             => true,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'accesspress_parallax_header_style',
-		'admin-head-callback'    => 'accesspress_parallax_admin_header_style',
-		'admin-preview-callback' => 'accesspress_parallax_admin_header_image',
+		'wp-head-callback'       => 'chestnut_theme_header_style',
+		'admin-head-callback'    => 'chestnut_theme_admin_header_style',
+		'admin-preview-callback' => 'chestnut_theme_admin_header_image',
 	) ) );
 }
-add_action( 'after_setup_theme', 'accesspress_parallax_custom_header_setup' );
+add_action( 'after_setup_theme', 'chestnut_theme_custom_header_setup' );
 
-if ( ! function_exists( 'accesspress_parallax_header_style' ) ) :
+if ( ! function_exists( 'chestnut_theme_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
  *
- * @see accesspress_parallax_custom_header_setup().
+ * @see chestnut_theme_custom_header_setup().
  */
-function accesspress_parallax_header_style() {
+function chestnut_theme_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	// If no custom options for text are set, let's bail
@@ -67,15 +67,15 @@ function accesspress_parallax_header_style() {
 	</style>
 	<?php
 }
-endif; // accesspress_parallax_header_style
+endif; // chestnut_theme_header_style
 
-if ( ! function_exists( 'accesspress_parallax_admin_header_style' ) ) :
+if ( ! function_exists( 'chestnut_theme_admin_header_style' ) ) :
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
  *
- * @see accesspress_parallax_custom_header_setup().
+ * @see chestnut_theme_custom_header_setup().
  */
-function accesspress_parallax_admin_header_style() {
+function chestnut_theme_admin_header_style() {
 ?>
 	<style type="text/css">
 		.appearance_page_custom-header #headimg {
@@ -95,15 +95,15 @@ function accesspress_parallax_admin_header_style() {
 	</style>
 <?php
 }
-endif; // accesspress_parallax_admin_header_style
+endif; // chestnut_theme_admin_header_style
 
-if ( ! function_exists( 'accesspress_parallax_admin_header_image' ) ) :
+if ( ! function_exists( 'chestnut_theme_admin_header_image' ) ) :
 /**
  * Custom header image markup displayed on the Appearance > Header admin panel.
  *
- * @see accesspress_parallax_custom_header_setup().
+ * @see chestnut_theme_custom_header_setup().
  */
-function accesspress_parallax_admin_header_image() {
+function chestnut_theme_admin_header_image() {
 	$style = sprintf( ' style="color:#%s;"', get_header_textcolor() );
 ?>
 	<div id="headimg">
@@ -115,4 +115,4 @@ function accesspress_parallax_admin_header_image() {
 	</div>
 <?php
 }
-endif; // accesspress_parallax_admin_header_image
+endif; // chestnut_theme_admin_header_image

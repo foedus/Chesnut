@@ -14,7 +14,7 @@ $post_date_class = ((!empty($post_date) && $post_date == ' ') || has_post_thumbn
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'accesspress_parallax' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'chestnut_theme' ),
 				'after'  => '</div>',
 			) );
 		?>

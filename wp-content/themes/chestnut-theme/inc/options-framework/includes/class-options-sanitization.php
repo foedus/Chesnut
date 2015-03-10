@@ -470,15 +470,15 @@ function of_recognized_background_size() {
  */
 function of_recognized_layout() {
 	$default = array(
-		'default_template' => __('Default Section', 'accesspress_parallax'),
-		'service_template' => __('Service Section', 'accesspress_parallax'),
-		'team_template' => __('Team Section', 'accesspress_parallax'),
-		'portfolio_template' => __('Portfolio Section', 'accesspress_parallax'),
-		'testimonial_template' => __('Testimonial Section', 'accesspress_parallax'),
-		'blog_template' => __('Blog Section', 'accesspress_parallax'),
-		'action_template' => __('Call to Action Section', 'accesspress_parallax'),
-		'googlemap_template' => __('Google Map Section', 'accesspress_parallax'),
-		'blank_template' => __('Blank Section', 'accesspress_parallax'),
+		'default_template' => __('Default Section', 'chestnut_theme'),
+		'service_template' => __('Service Section', 'chestnut_theme'),
+		'team_template' => __('Team Section', 'chestnut_theme'),
+		'portfolio_template' => __('Portfolio Section', 'chestnut_theme'),
+		'testimonial_template' => __('Testimonial Section', 'chestnut_theme'),
+		'blog_template' => __('Blog Section', 'chestnut_theme'),
+		'action_template' => __('Call to Action Section', 'chestnut_theme'),
+		'googlemap_template' => __('Google Map Section', 'chestnut_theme'),
+		'blank_template' => __('Blank Section', 'chestnut_theme'),
 		);
 	return apply_filters( 'of_recognized_layout', $default );
 }

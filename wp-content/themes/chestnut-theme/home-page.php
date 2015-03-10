@@ -2,7 +2,7 @@
 /**
  * Template Name: Home Page
  *
- * @package accesspress_parallax
+ * @package chestnut_theme
  */
  
 

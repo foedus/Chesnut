@@ -20,63 +20,63 @@ function optionsframework_option_name() {
  * Defines an array of options that will be used to generate the settings page and be saved in the database.
  * When creating the 'id' fields, make sure to use all lowercase and no spaces.
  *
- * If you are making your theme translatable, you should replace 'accesspress_parallax'
+ * If you are making your theme translatable, you should replace 'chestnut_theme'
  * with the actual text domain for your theme.  Read more:
  * http://codex.wordpress.org/Function_Reference/load_theme_textdomain
  */
 
 function optionsframework_options() {
 
-	// $settings = get_option('accesspress_parallax');
+	// $settings = get_option('chestnut_theme');
 	// 	$count = count($settings['parallax_section']);
-	// 	update_option('accesspress_parallax_count', $count );
+	// 	update_option('chestnut_theme_count', $count );
 
 	// Test data
 	$transitions = array(
-		'fade' => __('Fade', 'accesspress_parallax'),
-		'horizontal' => __('Slide Horizontal', 'accesspress_parallax'),
-		'vertical' => __('Slide Vertical', 'accesspress_parallax')
+		'fade' => __('Fade', 'chestnut_theme'),
+		'horizontal' => __('Slide Horizontal', 'chestnut_theme'),
+		'vertical' => __('Slide Vertical', 'chestnut_theme')
 	);
 
 	$overlay = array(
-		'overlay1' => __('Overlay 1', 'accesspress_parallax'),
-		'overlay2' => __('Overlay 2', 'accesspress_parallax'),
-		'overlay3' => __('Overlay 3', 'accesspress_parallax'),
+		'overlay1' => __('Overlay 1', 'chestnut_theme'),
+		'overlay2' => __('Overlay 2', 'chestnut_theme'),
+		'overlay3' => __('Overlay 3', 'chestnut_theme'),
 		'overlay4'  => __( 'Overlay 4', 'options-framework')
 	);
 
 	$section_template = array(
-		'default_template' => __('Default Section', 'accesspress_parallax'),
-		'service_template' => __('Service Section', 'accesspress_parallax'),
-		'team_template' => __('Team Section', 'accesspress_parallax'),
-		'portfolio_template' => __('Portfolio Section', 'accesspress_parallax'),
-		'testimonial_template' => __('Testimonial Section', 'accesspress_parallax'),
-		'blog_template' => __('Blog Section', 'accesspress_parallax'),
-		'action_template' => __('Call to Action Section', 'accesspress_parallax'),
-		'googlemap_template' => __('Google Map Section', 'accesspress_parallax'),
-		'blank_template' => __('Blank Section', 'accesspress_parallax'),
+		'default_template' => __('Default Section', 'chestnut_theme'),
+		'service_template' => __('Service Section', 'chestnut_theme'),
+		'team_template' => __('Team Section', 'chestnut_theme'),
+		'portfolio_template' => __('Portfolio Section', 'chestnut_theme'),
+		'testimonial_template' => __('Testimonial Section', 'chestnut_theme'),
+		'blog_template' => __('Blog Section', 'chestnut_theme'),
+		'action_template' => __('Call to Action Section', 'chestnut_theme'),
+		'googlemap_template' => __('Google Map Section', 'chestnut_theme'),
+		'blank_template' => __('Blank Section', 'chestnut_theme'),
 	);
 
 	$check = array(
-		'yes' => __('Yes', 'accesspress_parallax'),
-		'no' => __('No', 'accesspress_parallax')
+		'yes' => __('Yes', 'chestnut_theme'),
+		'no' => __('No', 'chestnut_theme')
 	);
 
 	$test_array = array(
-		'one' => __('One', 'accesspress_parallax'),
-		'two' => __('Two', 'accesspress_parallax'),
-		'three' => __('Three', 'accesspress_parallax'),
-		'four' => __('Four', 'accesspress_parallax'),
-		'five' => __('Five', 'accesspress_parallax')
+		'one' => __('One', 'chestnut_theme'),
+		'two' => __('Two', 'chestnut_theme'),
+		'three' => __('Three', 'chestnut_theme'),
+		'four' => __('Four', 'chestnut_theme'),
+		'five' => __('Five', 'chestnut_theme')
 	);
 
 	// Multicheck Array
 	$multicheck_array = array(
-		'one' => __('French Toast', 'accesspress_parallax'),
-		'two' => __('Pancake', 'accesspress_parallax'),
-		'three' => __('Omelette', 'accesspress_parallax'),
-		'four' => __('Crepe', 'accesspress_parallax'),
-		'five' => __('Waffle', 'accesspress_parallax')
+		'one' => __('French Toast', 'chestnut_theme'),
+		'two' => __('Pancake', 'chestnut_theme'),
+		'three' => __('Omelette', 'chestnut_theme'),
+		'four' => __('Crepe', 'chestnut_theme'),
+		'five' => __('Waffle', 'chestnut_theme')
 	);
 
 	// Multicheck Defaults
@@ -99,30 +99,30 @@ function optionsframework_options() {
 	$parallax_defaults = NULL;
 
     $about_content = "<p>".__('AccessPress Parallax is a beautiful WordPress theme with Parallax design. Parallax design has become popular and is being adopted because 3D effects are possible with it, you can add some sphere to your product, it is the best way of storytelling, you can draw your visitors in, it is interactive, engaging, makes your visitors curious, fun, surprise, effective to trigger action, invite your visitors in great Call to Action, great conversion rates and many more. This is probably the most beautiful, feature rich and complete free WordPress parallax theme with features like: fully responsive, advance theme option panel, featured slider, advance post settings, services/team/blog/portfolio/testimonial layout, Google map integration, custom logo/fav icon, call to action, CSS animation, SEO friendly, translation ready, RTL support, custom CSS/JS and more! ')."</p>"; 
-    $about_content .= "<p><a target='_blank' href='".esc_url('http://www.accesspressthemes.com/')."'>AccessPress Themes</a> ".__('- A WordPress Division of Access Keys.','accesspress_parallax')."</p>"; 
+    $about_content .= "<p><a target='_blank' href='".esc_url('http://www.accesspressthemes.com/')."'>AccessPress Themes</a> ".__('- A WordPress Division of Access Keys.','chestnut_theme')."</p>"; 
     
     $about_content .= "<hr/>";
     
-    $about_content .= "<h4>".__('Other products by AccessPressThemes','accesspress_parallax')."</h4>";
-    $about_content .=  __('Our Themes - ','accesspress_ray'). __(sprintf('<a href="%s" target="_blank">https://accesspressthemes.com/themes</a>','https://accesspressthemes.com/themes'))."<br/><br />" ;
-    $about_content .= __('Our Plugins - ','accesspress_ray'). __(sprintf('<a href="%s" target="_blank">https://accesspressthemes.com/plugins</a>','https://accesspressthemes.com/plugins'))."<br/><br />" ;
+    $about_content .= "<h4>".__('Other products by AccessPressThemes','chestnut_theme')."</h4>";
+    $about_content .=  __('Our Themes - ','chestnut_ray'). __(sprintf('<a href="%s" target="_blank">https://accesspressthemes.com/themes</a>','https://accesspressthemes.com/themes'))."<br/><br />" ;
+    $about_content .= __('Our Plugins - ','chestnut_ray'). __(sprintf('<a href="%s" target="_blank">https://accesspressthemes.com/plugins</a>','https://accesspressthemes.com/plugins'))."<br/><br />" ;
 
     $about_content .= "<hr/>";
 
-    $about_content .= "<h4>".__('Get in touch','accesspress_parallax')."</h4>";
-    $about_content .= __('If you have any question/feedback, please get in touch:','accesspress_parallax')."<br /><br />";
-    $about_content .= __('General enquiries:','accesspress_parallax')." <a href='mailto:".esc_url('info@accesspressthemes.com')."'>info@accesspressthemes.com</a><br /><br />";
-    $about_content .= __('Support:','accesspress_parallax')." <a href='mailto:".esc_url('support@accesspressthemes.com')."'>support@accesspressthemes.com</a><br /><br />";
-    $about_content .= __('Sales:','accesspress_parallax')." <a href='mailto:".esc_url('sales@accesspressthemes.com')."'>sales@accesspressthemes.com</a><br/><br />";
+    $about_content .= "<h4>".__('Get in touch','chestnut_theme')."</h4>";
+    $about_content .= __('If you have any question/feedback, please get in touch:','chestnut_theme')."<br /><br />";
+    $about_content .= __('General enquiries:','chestnut_theme')." <a href='mailto:".esc_url('info@accesspressthemes.com')."'>info@accesspressthemes.com</a><br /><br />";
+    $about_content .= __('Support:','chestnut_theme')." <a href='mailto:".esc_url('support@accesspressthemes.com')."'>support@accesspressthemes.com</a><br /><br />";
+    $about_content .= __('Sales:','chestnut_theme')." <a href='mailto:".esc_url('sales@accesspressthemes.com')."'>sales@accesspressthemes.com</a><br/><br />";
     
     $about_content .= "<hr />";
 
-	$about_content .="<h4>".__('Get social','accesspress_parallax')."</h4>";
+	$about_content .="<h4>".__('Get social','chestnut_theme')."</h4>";
 
-	$about_content .="<p>".__('Get connected with us on social media. Facebook is the best place to find updates on our themes/plugins:','accesspress_parallax')."</p>";
+	$about_content .="<p>".__('Get connected with us on social media. Facebook is the best place to find updates on our themes/plugins:','chestnut_theme')."</p>";
 
-    $about_content .="<p>".__('Like us on facebook:','accesspress_parallax')."</p>";
-	$about_content .='<iframe style="border: none; overflow: hidden; width: 740px; height: 230px;" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FAccessPress-Themes%2F1396595907277967&amp;width=740&amp;height=230&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=true&amp;appId=1411139805828592" width="740" height="230" frameborder="0" scrolling="no"></iframe>';	
+    $about_content .="<p>".__('Like us on facebook:','chestnut_theme')."</p>";
+	$about_content .='<iframe style="border: none; overflow: hidden; width: 740px; height: 230px;" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2Fchestnut-Themes%2F1396595907277967&amp;width=740&amp;height=230&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=true&amp;appId=1411139805828592" width="740" height="230" frameborder="0" scrolling="no"></iframe>';	
 
 
 	// Pull all the categories into an array
@@ -155,38 +155,38 @@ function optionsframework_options() {
 	$options = array();
 
 	$options[] = array(
-		'name' => __('General Settings', 'accesspress_parallax'),
+		'name' => __('General Settings', 'chestnut_theme'),
 		'type' => 'heading');
 
 	$options[] = array(
-		'name' => __('Enable Parallax', 'accesspress_parallax'),
-		'desc' => __('Check To enable', 'accesspress_parallax'),
+		'name' => __('Enable Parallax', 'chestnut_theme'),
+		'desc' => __('Check To enable', 'chestnut_theme'),
 		'id' => 'enable_parallax',
 		'std' => '1',
 		'type' => 'checkbox');
 
 	$options[] = array(
-		'name' => __('Enable Animation on scroll', 'accesspress_parallax'),
-		'desc' => __('Check To enable', 'accesspress_parallax'),
+		'name' => __('Enable Animation on scroll', 'chestnut_theme'),
+		'desc' => __('Check To enable', 'chestnut_theme'),
 		'id' => 'enable_animation',
 		'std' => '1',
 		'type' => 'checkbox');
 
 	$options[] = array(
-		'name' => __('Enable Responsive', 'accesspress_parallax'),
-		'desc' => __('Check To enable', 'accesspress_parallax'),
+		'name' => __('Enable Responsive', 'chestnut_theme'),
+		'desc' => __('Check To enable', 'chestnut_theme'),
 		'id' => 'enable_responsive',
 		'std' => '1',
 		'type' => 'checkbox');
 
 
 	$options[] = array(
-		'name' => __('Upload Logo', 'accesspress_parallax'),
-		'desc' => '<a target="_blank" href="'.admin_url().'themes.php?page=custom-header" class="button">'.__('Upload', 'accesspress_parallax').'</a>',
+		'name' => __('Upload Logo', 'chestnut_theme'),
+		'desc' => '<a target="_blank" href="'.admin_url().'themes.php?page=custom-header" class="button">'.__('Upload', 'chestnut_theme').'</a>',
 		'type' => 'info');
 
 	$options[] = array(
-		'name' => __('Upload Fav Icon', 'accesspress_parallax'),
+		'name' => __('Upload Fav Icon', 'chestnut_theme'),
 		'id' => 'fav_icon',
 		'class' => 'sub-option',
 		'type' => 'upload');
@@ -202,27 +202,27 @@ function optionsframework_options() {
 	);
 
 	$options[] = array(
-		'name' => __('Google Map', 'accesspress_parallax'),
-		'desc' => sprintf(__('To get Values of Latitude and Longitude by Location name, click on <a href="%s">http://www.latlong.net</a>', 'accesspress_parallax'),esc_url("http://www.latlong.net")),
+		'name' => __('Google Map', 'chestnut_theme'),
+		'desc' => sprintf(__('To get Values of Latitude and Longitude by Location name, click on <a href="%s">http://www.latlong.net</a>', 'chestnut_theme'),esc_url("http://www.latlong.net")),
 		'id' => 'latlng',
 		'type' => 'info');	
 
 	$options[] = array(
-		'name' => __('Enter the latitude', 'accesspress_parallax'),
+		'name' => __('Enter the latitude', 'chestnut_theme'),
 		'id' => 'map_latitude',
 		'std' => '27.695401',
 		'class' => 'mini',
 		'type' => 'text');
 
 	$options[] = array(
-		'name' => __('Enter the longitude', 'accesspress_parallax'),
+		'name' => __('Enter the longitude', 'chestnut_theme'),
 		'id' => 'map_longitude',
 		'std' => '85.291604',
 		'class' => 'mini',
 		'type' => 'text');
 
 	$options[] = array(
-		'name' => __('Parallax Settings', 'accesspress_parallax'),
+		'name' => __('Parallax Settings', 'chestnut_theme'),
 		'type' => 'heading');
 
 
@@ -242,44 +242,44 @@ function optionsframework_options() {
 
 	/*Post Section Ends*/
 	$options[] = array(
-		'name' => __('Post Settings', 'accesspress_parallax'),
+		'name' => __('Post Settings', 'chestnut_theme'),
 		'type' => 'heading');
 
 	$options[] = array(
-		'name' => __('Show Posted Date', 'accesspress_parallax'),
-		'desc' => __('Check To enable', 'accesspress_parallax'),
+		'name' => __('Show Posted Date', 'chestnut_theme'),
+		'desc' => __('Check To enable', 'chestnut_theme'),
 		'id' => 'post_date',
 		'std' => '1',
 		'type' => 'checkbox');
 
 	$options[] = array(
-		'name' => __('Show Post Author', 'accesspress_parallax'),
-		'desc' => __('Check To enable', 'accesspress_parallax'),
+		'name' => __('Show Post Author', 'chestnut_theme'),
+		'desc' => __('Check To enable', 'chestnut_theme'),
 		'id' => 'post_author',
 		'std' => '1',
 		'type' => 'checkbox');
 
 	$options[] = array(
-		'name' => __('Show Post Footer text', 'accesspress_parallax'),
-		'desc' => __('Check To enable', 'accesspress_parallax'),
+		'name' => __('Show Post Footer text', 'chestnut_theme'),
+		'desc' => __('Check To enable', 'chestnut_theme'),
 		'id' => 'post_footer',
 		'std' => '1',
 		'type' => 'checkbox');
 
 	$options[] = array(
-		'name' => __('Show Prev Next Pagination', 'accesspress_parallax'),
-		'desc' => __('Check To enable', 'accesspress_parallax'),
+		'name' => __('Show Prev Next Pagination', 'chestnut_theme'),
+		'desc' => __('Check To enable', 'chestnut_theme'),
 		'id' => 'post_pagination',
 		'std' => '1',
 		'type' => 'checkbox');
 	
 	/*Parallax Section Ends*/
 	$options[] = array(
-		'name' => __('Slider Settings', 'accesspress_parallax'),
+		'name' => __('Slider Settings', 'chestnut_theme'),
 		'type' => 'heading');
 
 	$options[] = array(
-		'name' => __('Show Slider', 'accesspress_parallax'),
+		'name' => __('Show Slider', 'chestnut_theme'),
 		'id' => 'show_slider',
 		'std' => 'yes',
 		'type' => 'radio',
@@ -287,149 +287,149 @@ function optionsframework_options() {
 
 	if ( $options_categories ) {
 	$options[] = array(
-		'name' => __('Select a Category', 'accesspress_parallax'),
+		'name' => __('Select a Category', 'chestnut_theme'),
 		'id' => 'slider_category',
 		'type' => 'select',
 		'options' => $options_categories);
 	}
 
 	$options[] = array(
-		'name' => __('Show full window', 'accesspress_parallax'),
+		'name' => __('Show full window', 'chestnut_theme'),
 		'id' => 'slider_full_window',
 		'std' => 'yes',
 		'type' => 'radio',
 		'options' => $check);
 
 	$options[] = array(
-		'name' => __('Show Pager', 'accesspress_parallax'),
+		'name' => __('Show Pager', 'chestnut_theme'),
 		'id' => 'show_pager',
 		'std' => 'yes',
 		'type' => 'radio',
 		'options' => $check);
 
 	$options[] = array(
-		'name' => __('Show Controls', 'accesspress_parallax'),
+		'name' => __('Show Controls', 'chestnut_theme'),
 		'id' => 'show_controls',
 		'std' => 'yes',
 		'type' => 'radio',
 		'options' => $check);
 
 	$options[] = array(
-		'name' => __('Auto Transition', 'accesspress_parallax'),
+		'name' => __('Auto Transition', 'chestnut_theme'),
 		'id' => 'auto_transition',
 		'std' => 'yes',
 		'type' => 'radio',
 		'options' => $check);
 
 	$options[] = array(
-		'name' => __('Slider Transition', 'accesspress_parallax'),
+		'name' => __('Slider Transition', 'chestnut_theme'),
 		'id' => 'slider_transition',
 		'std' => 'fade',
 		'type' => 'radio',
 		'options' => $transitions);
 
 	$options[] = array(
-		'name' => __('Slider Transition Speed', 'accesspress_parallax'),
+		'name' => __('Slider Transition Speed', 'chestnut_theme'),
 		'id' => 'slider_speed',
 		'std' => '5000',
 		'type' => 'text');
 
 	$options[] = array(
-		'name' => __('Slider Pause Duration', 'accesspress_parallax'),
+		'name' => __('Slider Pause Duration', 'chestnut_theme'),
 		'id' => 'slider_pause',
 		'std' => '5000',
 		'type' => 'text');
 
 	$options[] = array(
-		'name' => __('Show Caption', 'accesspress_parallax'),
+		'name' => __('Show Caption', 'chestnut_theme'),
 		'id' => 'show_caption',
 		'std' => 'yes',
 		'type' => 'radio',
 		'options' => $check);
 
 	$options[] = array(
-		'name' => __('Social Links', 'accesspress_parallax'),
+		'name' => __('Social Links', 'chestnut_theme'),
 		'type' => 'heading');
 
 	$options[] = array(
-		'name' => __('Show Social Icon', 'accesspress_parallax'),
-		'desc' => __('Check To enable', 'accesspress_parallax'),
+		'name' => __('Show Social Icon', 'chestnut_theme'),
+		'desc' => __('Check To enable', 'chestnut_theme'),
 		'id' => 'show_social',
 		'std' => '1',
 		'type' => 'checkbox');
 
 	$options[] = array(
-		'name' => __('Facebook', 'accesspress_parallax'),
+		'name' => __('Facebook', 'chestnut_theme'),
 		'id' => 'facebook',
 		'type' => 'url');
 
 	$options[] = array(
-		'name' => __('Twitter', 'accesspress_parallax'),
+		'name' => __('Twitter', 'chestnut_theme'),
 		'id' => 'twitter',
 		'type' => 'url');
 
 	$options[] = array(
-		'name' => __('Google Plus', 'accesspress_parallax'),
+		'name' => __('Google Plus', 'chestnut_theme'),
 		'id' => 'google_plus',
 		'type' => 'url');
 
 	$options[] = array(
-		'name' => __('Youtube', 'accesspress_parallax'),
+		'name' => __('Youtube', 'chestnut_theme'),
 		'id' => 'youtube',
 		'type' => 'url');
 
 	$options[] = array(
-		'name' => __('Pinterest', 'accesspress_parallax'),
+		'name' => __('Pinterest', 'chestnut_theme'),
 		'id' => 'pinterest',
 		'type' => 'url');
 
 	$options[] = array(
-		'name' => __('Linkedin', 'accesspress_parallax'),
+		'name' => __('Linkedin', 'chestnut_theme'),
 		'id' => 'linkedin',
 		'type' => 'url');
 
 	$options[] = array(
-		'name' => __('Fickr', 'accesspress_parallax'),
+		'name' => __('Fickr', 'chestnut_theme'),
 		'id' => 'flickr',
 		'type' => 'url');
 
 	$options[] = array(
-		'name' => __('Vimeo', 'accesspress_parallax'),
+		'name' => __('Vimeo', 'chestnut_theme'),
 		'id' => 'vimeo',
 		'type' => 'url');
 
 	$options[] = array(
-		'name' => __('Instagram', 'accesspress_parallax'),
+		'name' => __('Instagram', 'chestnut_theme'),
 		'id' => 'instagram',
 		'type' => 'url');
 
 	$options[] = array(
-		'name' => __('Skype', 'accesspress_parallax'),
+		'name' => __('Skype', 'chestnut_theme'),
 		'id' => 'skype',
 		'type' => 'text');
 
 	$options[] = array(
-		'name' => __('Tools', 'accesspress_parallax'),
+		'name' => __('Tools', 'chestnut_theme'),
 		'type' => 'heading');
 
 	$options[] = array(
-		'name' => __('Custom CSS', 'accesspress_parallax'),
+		'name' => __('Custom CSS', 'chestnut_theme'),
 		'id' => 'custom_css',
 		'type' => 'textarea',
 		'desc' => 'Put your custom CSS here');
 
 	$options[] = array(
-		'name' => __('Custom JS', 'accesspress_parallax'),
+		'name' => __('Custom JS', 'chestnut_theme'),
 		'id' => 'custom_js',
 		'type' => 'textarea',
 		'desc' => 'Put your analytics code/custom JS here');
 
 	$options[] = array(
-		'name' => __('About', 'accesspress_parallax'),
+		'name' => __('About', 'chestnut_theme'),
 		'type' => 'heading');
 
 	$options[] = array(
-		'name' => __('About AccessPress Themes', 'accesspress_parallax'),
+		'name' => __('About AccessPress Themes', 'chestnut_theme'),
 		'desc' => $about_content,
 		'type' => 'info');
 return $options;

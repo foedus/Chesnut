@@ -11,7 +11,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<?php if(is_active_sidebar('footer-1') || is_active_sidebar('footer-2') || is_active_sidebar('footer-3') || is_active_sidebar('footer-4')) :?>
-		<div class="top-footer footer-column-<?php echo accesspress_footer_count(); ?>">
+		<div class="top-footer footer-column-<?php echo chestnut_footer_count(); ?>">
 			<div class="mid-content">
             <div class="top-footer-wrap clearfix">
 				<?php if(is_active_sidebar('footer-1')): ?>

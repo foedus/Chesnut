@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package accesspress_parallax
+ * @package chestnut_theme
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -38,7 +38,7 @@
 		</div>
 
 		<nav id="site-navigation" class="main-navigation">
-		<div class="menu-toggle"><?php _e( 'Menu', 'accesspress_parallax' ); ?></div>
+		<div class="menu-toggle"><?php _e( 'Menu', 'chestnut_theme' ); ?></div>
 					
 			<?php 
 			$sections = of_get_option('parallax_section');

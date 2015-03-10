@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area.
  *
- * @package accesspress_parallax
+ * @package chestnut_theme
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

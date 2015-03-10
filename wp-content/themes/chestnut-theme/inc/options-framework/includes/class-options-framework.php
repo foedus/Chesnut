@@ -102,7 +102,7 @@ class Options_Framework {
 
 		if ( !$options ) {
 	        // Load options from options.php file (if it exists)
-	        $location = apply_filters( 'options_framework_location', array( 'inc/accesspress-options.php' ) );
+	        $location = apply_filters( 'options_framework_location', array( 'inc/chestnut-options.php' ) );
 	        if ( $optionsfile = locate_template( $location ) ) {
 	            $maybe_options = require_once $optionsfile;
 	            if ( is_array( $maybe_options ) ) {

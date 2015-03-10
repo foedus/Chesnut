@@ -553,7 +553,7 @@ class Options_Framework_Interface {
 				$output .= '</div>';
 				}
 			}
-				update_option('accesspress_parallax_count', $parallaxsection_array );
+				update_option('chestnut_theme_count', $parallaxsection_array );
 
 				break;
 
