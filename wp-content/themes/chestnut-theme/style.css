@@ -1399,37 +1399,56 @@ Call to Action Section
 Course Library Page
 --------------------------------------------------------------*/
 #library-filters{
-	width: 20%;
+	width: 15%;
 	height: 250px;
-	margin: 10px;
-	border: 1px solid black;
+	padding: 10px;
+	margin-top: 10px;
+	border: 1px solid grey;
 	float: left;
-	display: inline-block;
+}
+#course-listing-column {
+	width:80%;
+	margin-left: 4%;
+	float: left;
 }
 .course-info {
-	width: 70%;
-	margin: 10px;
-	padding: 5px;
-	border-top: 1px solid black;
-	display: inline-block;
+	padding: 5px 0;
+	border-bottom: 1px solid grey;
+	height: 120px;
 }
-#course-image{
+.course-image{
 	float: left;
 	height: 90px;
 	width: 160px;
-	border: 1px solid black;
-	background-color: white;
-	margin: 5px;
-	display: inline-block;
+	border: 1px solid grey;
+	background-color: grey;
+	margin: 5px 5px 5px 0;
 }
-#course-text{
-    padding:5px 5px;
-    color: white;
-    display: inline-block;
+.course-text{
+    display: table-cell;
 }
-#course-title{
-    padding:5px 5px;
-    color: red;
+.course-text p {
+	margin: 0;
+	font-size: 15px;
+}
+#search-bar {
+	height: 20px;
+	width: 100%;
+	background-color: lightgrey;
+}
+#pagination {
+	display: inline;
+	float: right;
+	margin-right: 5px;
+}
+#search {
+	height: 18px;
+	float: right;
+	margin: 1px 5px 0 0;
+	width: 200px;
+	border-radius: 3px;
+	display: inline;
+	font-size: 12px;
 }
 
 /*--------------------------------------------------------------
