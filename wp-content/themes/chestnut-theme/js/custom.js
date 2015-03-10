@@ -31,6 +31,8 @@ jQuery(document).ready(function($){
     $(this).css('margin-top',-(cap_height/2));
     });
 
+    }).resize();
+
     $('#main-slider .overlay').prependTo('#main-slider .slides');
 
 
