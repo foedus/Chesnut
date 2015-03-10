@@ -10,10 +10,10 @@
 get_header(); ?>
 <div class="mid-content">
 	<div id="page-primary" class="content-area">
-		<div id="library-filters" class="content-area">
-			<h1>Filters</h1>
-		</div>
 		<main id="main" class="site-main" role="main">
+			<div id="library-filters" class="content-area">
+				<h1>Filters</h1>
+			</div>
 
 			<?php
 				$args = array( 'posts_per_page' => 10, 'order'=> 'ASC', 'orderby' => 'title', 'category_name' => 'Library' );
