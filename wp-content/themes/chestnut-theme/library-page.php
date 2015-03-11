@@ -38,11 +38,16 @@ get_header(); ?>
 							$postslist = get_posts( $args );
 
 							foreach ( $postslist as $post ) :
-						  		setup_postdata( $post ); ?> 			
+						  		setup_postdata( $post );
+						  		$post_id = get_the_id();
+						  		$theID = get_post_meta($post_id, 'CourseID', true);
+						  		$theauthor = get_post_meta($post_id, 'Presenter', true); ?>		
 								<div class="course-info">
-									<div class="course-image"><a href='<?php the_permalink(); ?>'><?php the_post_thumbnail(); ?></a></div>
+									<a href=/<?php echo $theID ?>><div class='course-image-overlay'><span>+</span></div></a>
+									<div class="course-image"><?php the_post_thumbnail(); ?></div>
 									<div class="course-text">
-										<a href='<?php the_permalink(); ?>'><h2 class="course-title"><?php the_title(); ?></h2></a>
+										<a href=/<?php echo $theID ?>><h2 class="course-title"><?php the_title(); ?></h2></a>
+										by <?php echo $theauthor ?>
 										<?php the_excerpt(); ?>
 									</div>
 								</div>
