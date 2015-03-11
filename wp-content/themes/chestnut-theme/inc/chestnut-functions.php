@@ -442,7 +442,9 @@ function create_portfolio(){
 	if ( $the_query->have_posts() ) {
 		while ( $the_query->have_posts() ) {
 			$the_query->the_post();
-			echo "<a href=".get_permalink()."class='portfolio-list'>";
+			$theauthor->get_post_custom_values($Presenter);
+			$theID->get_post_custom_values($CourseID);
+			echo "<a href=/".$theID."class='portfolio-list'>";
 			echo "<div class='portfolio-list center-this'>";
 				echo "<div class='portfolio-overlay'><span>+</span></div>";
 				echo "<div class='portfolio-image'>";
