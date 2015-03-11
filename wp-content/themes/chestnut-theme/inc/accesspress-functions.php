@@ -436,7 +436,7 @@ function list_courses(){
 function create_portfolio(){
 
 	// query to get posts
-	$the_query = new WP_Query( 'category_name=course-header' );
+	$the_query = new WP_Query( 'category_name=Library' );
 
 	// loop to create portfolio
 	if ( $the_query->have_posts() ) {
