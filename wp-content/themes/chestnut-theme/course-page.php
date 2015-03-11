@@ -14,7 +14,7 @@ get_header(); ?>
 			<article class="page type-page status-publish hentry">
 				<header class="entry-header">
 					<h1 id="course-title" class="entry-title"></h1>
-					<span class="clip-title"></span>
+					<span id="clip-title"></span>
 				</header>
 				<div class="entry-content">
 					<div id="video-player" style="width:100%;float:left;">
@@ -39,7 +39,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 </div>
 
 <script type="text/javascript">
@@ -56,7 +55,7 @@ console.log(category);
 				return parseInt(a["terms"]["post_tag"][0]["name"]) - parseInt(b["terms"]["post_tag"][0]["name"]); 
 			})
 			console.dir(postJSON);
-			document.getElementById("course-title").innerHTML = postJSON[0]["title"];
+			document.getElementById("clip-title").innerHTML = postJSON[0]["title"];
 		}
 	}
 	myRequest.open("GET", "http://www.chestnut-learning.com/wp-json/posts?filter[post_per_page]=99&filter[category_name]="+category, true);
