@@ -70,6 +70,15 @@ class WP_JSON_Posts {
 			'/posts/statuses' => array(
 				array( $this, 'get_post_statuses' ),     WP_JSON_Server::READABLE
 			),
+
+			//Courses
+			'/course' => array(
+				array( array( $this, 'get_course' ),      WP_JSON_Server::READABLE ),
+			),
+
+			'/course/(?P<id>\d+)' => array(
+				array( array( $this, 'get_course' ),       WP_JSON_Server::READABLE ),
+			),
 		);
 		return array_merge( $routes, $post_routes );
 	}
@@ -709,6 +718,14 @@ class WP_JSON_Posts {
 			'parent'          => (int) $post['post_parent'],
 			#'post_mime_type' => $post['post_mime_type'],
 			'link'            => get_permalink( $post['ID'] ),
+			// Special Chestnut meta fields
+			'CourseID'		  => get_post_meta( $post['ID'], 'CourseID', true),
+			'OrderID'         => get_post_meta( $post['ID'], 'OrderID', true),
+			'ChapterID'       => get_post_meta( $post['ID'], 'ChapterID', true),
+			'SectionID'       => get_post_meta( $post['ID'], 'SectionID', true),
+			'embedCode'       => get_post_meta( $post['ID'], 'embedCode', true),
+			'playlistCode'    => get_post_meta( $post['ID'], 'playlistCode', true),
+			'presenterName'   => get_post_meta( $post['ID'], 'playlistCode', true)
 		);
 
 		$post_fields_extended = array(
@@ -883,9 +900,9 @@ class WP_JSON_Posts {
 			return new WP_Error( 'json_post_invalid_id', __( 'Invalid post ID.' ), array( 'status' => 404 ) );
 		}
 
-		// if ( ! $this->check_edit_permission( $post ) ) {
-		// 	return new WP_Error( 'json_cannot_edit', __( 'Sorry, you cannot edit this post' ), array( 'status' => 403 ) );
-		// }
+		if ( ! $this->check_edit_permission( $post ) ) {
+			return new WP_Error( 'json_cannot_edit', __( 'Sorry, you cannot edit this post' ), array( 'status' => 403 ) );
+		}
 
 		global $wpdb;
 		$table = _get_meta_table( 'post' );
